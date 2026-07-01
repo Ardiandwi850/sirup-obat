@@ -1,242 +1,283 @@
-/* ===========================
-   RESET
-=========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ==========================================================================
+   1. CORE & RESET STYLE (Original Setup)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#fff7fb;
-    color:#444;
-    line-height:1.8;
+/* ==========================================================================
+   2. HEADER & FOOTER LAYOUT
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ===========================
-   HEADER
-=========================== */
-
-header{
-    width:100%;
-    height:100vh;
-    background:linear-gradient(135deg,#ff8fb1,#ffc7d9);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:#fff;
+.header-container h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.overlay{
-    padding:30px;
+.header-container h1 i {
+    margin-right: 10px;
 }
 
-header h1{
-    font-size:48px;
-    margin-bottom:20px;
+.header-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
 }
 
-header p{
-    font-size:20px;
-    margin-bottom:35px;
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
 
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#fff;
-    color:#e91e63;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
+/* ==========================================================================
+   3. MAIN CONTENT CONTAINER (GRID SYSTEM)
+   ========================================================================== */
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
 }
 
-.btn:hover{
-    background:#e91e63;
-    color:white;
+/* Responsif: Menjadi 2 kolom di layar desktop lebar */
+@media (min-width: 992px) {
+    .main-container {
+        grid-template-columns: 320px 1fr;
+        align-items: start;
+    }
 }
 
-/* ===========================
-   SECTION
-=========================== */
-
-section{
-    width:90%;
-    max-width:1100px;
-    margin:50px auto;
+/* ==========================================================================
+   4. QR CODE COMPONENT SECTION (Original Feature Box)
+   ========================================================================== */
+.qr-section {
+    position: sticky;
+    top: 20px;
 }
 
-.card{
-    background:#fff;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.qr-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    text-align: center;
+    border: 1px solid #eef2f5;
 }
 
-section h2{
-    text-align:center;
-    color:#e91e63;
-    margin-bottom:25px;
-    font-size:34px;
+.qr-card h3 {
+    color: #1e3c72;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
-/* ===========================
-   TABLE
-=========================== */
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
+.qr-card p {
+    font-size: 0.85rem;
+    color: #777777;
+    margin-bottom: 20px;
 }
 
-table th{
-    background:#ff8fb1;
-    color:white;
-    padding:14px;
+.qr-image-wrapper {
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px dashed #3498db;
+    margin-bottom: 15px;
 }
 
-table td{
-    padding:12px;
-    border:1px solid #ddd;
+.qr-image {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-table tr:nth-child(even){
-    background:#fff5f8;
+.qr-badge {
+    display: inline-block;
+    background-color: #e8f4fd;
+    color: #248afd;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
-/* ===========================
-   FLOWCHART
-=========================== */
-
-.flow{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
+/* ==========================================================================
+   5. EDUCATIONAL CARD COMPONENT (New Text Content)
+   ========================================================================== */
+.articles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.flow div{
-    background:#ffd7e5;
-    padding:15px 30px;
-    border-radius:12px;
-    font-weight:600;
-    width:320px;
-    text-align:center;
+.edu-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f5;
 }
 
-.flow span{
-    font-size:26px;
-    color:#e91e63;
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #f0f3f5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-/* ===========================
-   LIST
-=========================== */
-
-ul{
-    margin-left:20px;
+.card-body p {
+    text-align: justify;
+    margin-bottom: 16px;
+    color: #4a5568;
+    font-size: 0.98rem;
 }
 
-ul li{
-    margin-bottom:10px;
+.card-body p:last-child {
+    margin-bottom: 0;
 }
 
-/* ===========================
-   QR CODE
-=========================== */
+/* Icon Color Helpers */
+.text-blue { color: #3498db; }
+.text-amber { color: #f39c12; }
+.text-purple { color: #9b59b6; }
+.text-teal { color: #1abc9c; }
+.text-green { color: #2ecc71; }
+.text-indigo { color: #3f51b5; }
+.text-emerald { color: #10b981; }
+.text-rose { color: #f43f5e; }
 
-#scan .card{
-    text-align:center;
+/* ==========================================================================
+   6. LISTS & META INFO BOXES
+   ========================================================================== */
+.styled-list {
+    padding-left: 20px;
+    color: #4a5568;
 }
 
-.qr-box{
-    width:170px;
-    height:170px;
-    margin:20px auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:white;
-    border:3px solid #ffd0df;
-    border-radius:15px;
-    overflow:hidden;
+.styled-list li {
+    margin-bottom: 14px;
+    font-size: 0.96rem;
 }
 
-.qr-box img{
-    width:140px;
-    height:140px;
-    object-fit:contain;
-    display:block;
+.styled-list li strong {
+    color: #2c3e50;
 }
 
-#scan p{
-    margin-top:20px;
-    font-size:17px;
+.formula-meta-box {
+    background-color: #fff8f8;
+    border-left: 4px solid #f43f5e;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 25px;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
-
-footer{
-    background:#ff8fb1;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
+.formula-meta-box h4 {
+    color: #e11d48;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media(max-width:768px){
-
-header h1{
-    font-size:34px;
+.formula-meta-box ul {
+    list-style: none;
 }
 
-header p{
-    font-size:16px;
+.formula-meta-box ul li {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    color: #4c566a;
 }
 
-section{
-    width:95%;
+/* ==========================================================================
+   7. DATA TABLE RESPONSIVENESS
+   ========================================================================== */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
-.card{
-    padding:20px;
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    text-align: left;
+    min-width: 650px; /* Menjamin tabel tidak penyok di HP */
 }
 
-section h2{
-    font-size:28px;
+.data-table th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    padding: 14px 16px;
+    border-bottom: 2px solid #e2e8f0;
 }
 
-.flow div{
-    width:100%;
+.data-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #edf2f7;
+    color: #4a5568;
+    line-height: 1.5;
+    vertical-align: top;
 }
 
-table{
-    font-size:13px;
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
 }
 
-.qr-box{
-    width:150px;
-    height:150px;
+.data-table tbody tr:last-of-type td {
+    border-bottom: none;
 }
 
-.qr-box img{
-    width:120px;
-    height:120px;
+/* ==========================================================================
+   8. BIBLIOGRAPHY (DAFTAR PUSTAKA)
+   ========================================================================== */
+.bibliography-card {
+    background-color: #fafbfc;
 }
 
+.bib-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bib-list li {
+    font-size: 0.88rem;
+    color: #555555;
+    margin-bottom: 12px;
+    text-align: justify;
+    line-height: 1.5;
 }

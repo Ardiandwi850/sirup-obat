@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. CORE & RESET STYLE (Original Setup)
+   RESET & CORE STYLES
    ========================================================================== */
 * {
     margin: 0;
@@ -9,16 +9,16 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff5f6; /* Mengubah background utama menjadi pink super soft */
-    color: #4a3b3c; /* Mengubah teks gelap menjadi sedikit kecoklatan hangat */
+    background-color: #fff5f6; /* Warna Latar Belakang Luar Berwarna Soft Pink */
+    color: #4a3b3c;
     line-height: 1.6;
 }
 
 /* ==========================================================================
-   2. HEADER & FOOTER LAYOUT (Tema Pink Estetik)
+   HEADER STYLE (Gradasi Warna Pink Cantik & Estetik)
    ========================================================================== */
 header {
-    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); /* Gradasi Soft Pink Cerah */
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
     color: #ffffff;
     padding: 40px 20px;
     text-align: center;
@@ -41,17 +41,8 @@ header {
     opacity: 0.95;
 }
 
-footer {
-    background-color: #ff8fa3; /* Footer Pink Pastel Hangat */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
-}
-
 /* ==========================================================================
-   3. MAIN CONTENT CONTAINER (GRID SYSTEM)
+   MAIN LAYOUT CONTAINER (GRID SYSTEM)
    ========================================================================== */
 .main-container {
     max-width: 1200px;
@@ -62,7 +53,6 @@ footer {
     gap: 30px;
 }
 
-/* Responsif: Menjadi 2 kolom di layar desktop lebar */
 @media (min-width: 992px) {
     .main-container {
         grid-template-columns: 320px 1fr;
@@ -71,7 +61,7 @@ footer {
 }
 
 /* ==========================================================================
-   4. QR CODE COMPONENT SECTION 
+   QR CODE SIDEBAR DESIGN (Tema Soft Rose)
    ========================================================================== */
 .qr-section {
     position: sticky;
@@ -88,7 +78,7 @@ footer {
 }
 
 .qr-card h3 {
-    color: #ff5c7a; /* Teks Heading QR berwarna Rose Pink */
+    color: #ff5c7a;
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
@@ -126,7 +116,7 @@ footer {
 }
 
 /* ==========================================================================
-   5. EDUCATIONAL CARD COMPONENT (Pinky Card & Typography)
+   CARDS & ARTICLE TEXT CONTENT
    ========================================================================== */
 .articles-wrapper {
     display: flex;
@@ -145,7 +135,7 @@ footer {
 .card-title {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #ff4d6d; /* Judul artikel berwarna cerah */
+    color: #ff4d6d;
     padding-bottom: 12px;
     margin-bottom: 18px;
     border-bottom: 2px solid #fff0f3;
@@ -165,54 +155,54 @@ footer {
     margin-bottom: 0;
 }
 
-/* Icon Color Helpers (Semua disesuaikan ke gradasi Pink/Merah Stroberi lembut) */
-.text-blue, .text-amber, .text-purple, .text-teal, 
-.text-green, .text-indigo, .text-emerald, .text-rose { 
-    color: #ff5c7a; 
-}
-
-/* ==========================================================================
-   6. LISTS & META INFO BOXES
-   ========================================================================== */
+/* List Style untuk Fun Fact */
 .styled-list {
-    padding-left: 20px;
-    color: #5c4d50;
+    list-style-type: none;
+    padding: 0;
 }
 
 .styled-list li {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     font-size: 0.96rem;
+    color: #5c4d50;
+    text-align: justify;
+    padding-left: 15px;
+    border-left: 3px solid #ff8fa3;
 }
 
-.styled-list li strong {
-    color: #ff4d6d; /* Penekanan teks tebal berwarna pink tua */
-}
-
+/* Info Box Karakteristik Formula */
 .formula-meta-box {
     background-color: #fff0f3;
     border-left: 4px solid #ff4d6d;
     padding: 20px;
     border-radius: 0 8px 8px 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .formula-meta-box h4 {
     color: #ff0054;
     margin-bottom: 10px;
     font-size: 1.05rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+}
+
+.formula-meta-box ul {
+    list-style: none;
+    padding-left: 5px;
 }
 
 .formula-meta-box ul li {
-    font-size: 0.92rem;
-    margin-bottom: 6px;
+    font-size: 0.94rem;
+    margin-bottom: 8px;
     color: #5c4d50;
 }
 
+/* Icon Color Utility */
+.text-pink {
+    color: #ff5c7a;
+}
+
 /* ==========================================================================
-   7. DATA TABLE RESPONSIVENESS (Tema Pink Stroberi)
+   DATA TABLE LAYOUT (Tema Pink Stroberi Lembut)
    ========================================================================== */
 .table-container {
     overflow-x: auto;
@@ -227,11 +217,11 @@ footer {
     border-collapse: collapse;
     font-size: 0.92rem;
     text-align: left;
-    min-width: 650px;
+    min-width: 600px;
 }
 
 .data-table th {
-    background-color: #fff0f3; /* Header Tabel Berwarna Pink Lembut */
+    background-color: #fff0f3;
     color: #ff4d6d;
     font-weight: 600;
     padding: 14px 16px;
@@ -250,19 +240,15 @@ footer {
     background-color: #fffbfb;
 }
 
-.data-table tbody tr:last-of-type td {
-    border-bottom: none;
-}
-
 /* ==========================================================================
-   8. BIBLIOGRAPHY (DAFTAR PUSTAKA)
+   BIBLIOGRAPHY (DAFTAR PUSTAKA) & FOOTER
    ========================================================================== */
 .bibliography-card {
     background-color: #fffcfc;
 }
 
 .bib-list {
-    list-style-type: disc;
+    list-style-type: square;
     padding-left: 20px;
 }
 
@@ -271,5 +257,13 @@ footer {
     color: #6e5d60;
     margin-bottom: 12px;
     text-align: justify;
-    line-height: 1.5;
+}
+
+footer {
+    background-color: #ff8fa3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }

@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Memanggil file style.css dengan versi warna_pink untuk bypass cache browser -->
-    <link rel="stylesheet" href="style.css?v=warna_pink">
+    <!-- Trik bypass cache untuk memaksa GitHub memuat tema warna pink terbaru -->
+    <link rel="stylesheet" href="style.css?v=tema_pink_lengkap">
 </head>
 <body>
 
@@ -22,17 +22,16 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT CONTAINER (GRID SYSTEM) -->
+    <!-- MAIN CONTAINER -->
     <div class="main-container">
 
-        <!-- SIDEBAR: QR CODE COMPONENT -->
+        <!-- SIDEBAR: QR CODE -->
         <aside class="qr-section">
             <div class="qr-card">
                 <h3>Scan QR Code</h3>
                 <p>Akses halaman edukasi ini kapan saja melalui perangkat smartphone Anda</p>
                 <div class="qr-image-wrapper">
-                    <!-- Pastikan file QR Code kamu berada di folder assets/img/ dengan nama qrcode2.png -->
-                    <img src="assets/img/qrcode2.png" alt="QR Code Edukasi Sirup Obat" class="qr-image">
+                    <img src="assets/img/qrcode2.png" alt="QR Code" class="qr-image">
                 </div>
                 <div>
                     <span class="qr-badge">Live Website Version</span>
@@ -40,94 +39,117 @@
             </div>
         </aside>
 
-        <!-- MAIN ARTICLES WRAPPER -->
+        <!-- MAIN CONTENT AREA -->
         <main class="articles-wrapper">
 
-            <!-- ARTIKEL 1: PENGERTIAN -->
+            <!-- 1. PENGERTIAN -->
             <article class="edu-card" id="pengertian">
-                <h2 class="card-title"><i class="fa-solid fa-circle-info text-rose"></i> 1. Pengertian Sirup Obat</h2>
+                <h2 class="card-title"><i class="fa-solid fa-circle-info text-pink"></i> 1. Pengertian Sirup Obat</h2>
                 <div class="card-body">
-                    <p>Sirup obat merupakan sediaan cair oral yang mengandung satu atau lebih zat aktif yang dilarutkan atau didipersipkan dalam air murni (purified water) dengan penambahan pemanis, seperti sukrosa atau pemanis alternatif, sehingga memiliki rasa yang lebih enak, viskositas yang sesuai, dan mudah dikonsumsi. Dibandingkan sediaan padat seperti tablet atau kapsul, sirup lebih praktis digunakan dan banyak dipilih untuk bayi, anak-anak, lansia, serta pasien yang mengalami kesulitan menelan.</p>
+                    <p>Sirup obat merupakan sediaan cair oral yang mengandung satu atau lebih zat aktif yang dilarutkan atau didispersikan dalam air murni (purified water) dengan penambahan pemanis, seperti sukrosa atau pemanis alternatif, sehingga memiliki rasa yang lebih enak, viskositas yang sesuai, dan mudah dikonsumsi. Dibandingkan sediaan padat seperti tablet atau kapsul, sirup lebih praktis digunakan dan banyak dipilih untuk bayi, anak-anak, lansia, serta pasien yang mengalami kesulitan menelan.</p>
                     <p>Selain zat aktif dan pemanis, sirup mengandung berbagai eksipien, seperti pengawet, buffer, perisa, pewarna, antioksidan, dan agen pengkelat yang berfungsi menjaga stabilitas fisik, kimia, dan mikrobiologi serta meningkatkan mutu dan penerimaan pasien terhadap obat. Berdasarkan formulasinya, sirup dibedakan menjadi simple syrup, medicated syrup, dry syrup, dan sugar-free syrup yang disesuaikan dengan karakteristik zat aktif dan kebutuhan pasien. Dalam proses pembuatannya, sirup harus memenuhi prinsip Cara Pembuatan Obat yang Baik (CPOB) serta melalui berbagai pengujian mutu, seperti organoleptik, pH, viskositas, homogenitas, kadar zat aktif, dan uji stabilitas, sehingga diperoleh sediaan yang aman, efektif, berkualitas, dan tetap stabil hingga masa kedaluwarsa.</p>
                 </div>
             </article>
 
-            <!-- ARTIKEL 2: FORMULA SIRUP STROBERI -->
-            <article class="edu-card" id="formula">
-                <h2 class="card-title"><i class="fa-solid fa-flask text-rose"></i> 2. Formula Master Sediaan Sirup Obat Rasa Stroberi</h2>
+            <!-- 2. FUN FACT -->
+            <article class="edu-card" id="fun-fact">
+                <h2 class="card-title"><i class="fa-solid fa-wand-magic-sparkles text-pink"></i> Fun Fact Sirup Obat</h2>
                 <div class="card-body">
-                    <p>Berikut adalah rancangan formula master sediaan sirup obat dengan zat aktif tertentu (misalnya Parasetamol atau vitamin) yang menggunakan perisa dan pewarna stroberi untuk meningkatkan akseptabilitas (penerimaan) pada pasien anak-anak:</p>
+                    <p>Meskipun terlihat sederhana, sirup obat memiliki banyak fakta menarik yang berkaitan dengan sejarah, teknologi farmasi, dan proses pembuatannya. Berbagai inovasi formulasi membuat sirup menjadi salah satu bentuk sediaan obat yang paling banyak digunakan, terutama untuk anak-anak dan lansia. Berikut beberapa fakta menarik mengenai sirup obat:</p>
                     
-                    <!-- KOTAK INFORMASI FORMULA -->
+                    <ul class="styled-list">
+                        <li><strong>1. Salah Satu Sediaan Obat Tertua:</strong> Sirup telah digunakan sejak zaman Mesir, Yunani, dan Romawi Kuno dengan memanfaatkan madu sebagai pemanis alami. Kini, madu telah banyak digantikan oleh sukrosa karena lebih stabil, ekonomis, dan mudah diproduksi.</li>
+                        <li><strong>2. Gula Bukan Hanya untuk Rasa Manis:</strong> Selain memberikan rasa manis, sukrosa juga meningkatkan kekentalan (viskositas) dan membantu menghambat pertumbuhan mikroorganisme dengan menurunkan aktivitas air, sehingga dapat memperpanjang stabilitas sirup.</li>
+                        <li><strong>3. Tidak Semua Sirup Harus Dikocok:</strong> Sirup larutan tidak perlu dikocok karena zat aktifnya larut sempurna. Sebaliknya, sirup suspensi dan dry syrup perlu dikocok agar partikel obat tercampur merata sehingga dosis yang diberikan tetap akurat.</li>
+                        <li><strong>4. Banyak Antibiotik Anak Berbentuk Dry Syrup:</strong> Antibiotik seperti amoksisilin umumnya dibuat dalam bentuk dry syrup karena lebih stabil saat disimpan. Setelah ditambahkan air, obat biasanya hanya dapat digunakan selama 7–14 hari sesuai petunjuk.</li>
+                        <li><strong>5. Warna Tidak Menentukan Khasiat:</strong> Warna sirup hanya berfungsi untuk memperbaiki penampilan, membedakan varian rasa, dan memudahkan identifikasi produk. Khasiat obat ditentukan oleh zat aktifnya, bukan warnanya.</li>
+                        <li><strong>6. Rasa Pahit Dapat Disamarkan:</strong> Industri farmasi menggunakan teknologi taste masking, seperti penambahan perisa, pemanis, atau pelapisan partikel obat, sehingga sirup memiliki rasa yang lebih enak tanpa mengurangi efektivitasnya.</li>
+                        <li><strong>7. Tidak Semua Sirup Mengandung Gula:</strong> Saat ini tersedia sugar-free syrup yang menggunakan pemanis alternatif, seperti sorbitol, xilitol, sukralosa, atau aspartam. Jenis sirup ini cocok untuk pasien yang perlu membatasi konsumsi gula, seperti penderita diabetes atau individu yang menjalani diet rendah gula.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 3. CARA PEMBUATAN -->
+            <article class="edu-card" id="pembuatan">
+                <h2 class="card-title"><i class="fa-solid fa-gears text-pink"></i> 3. Cara Pembuatan Sirup Obat</h2>
+                <div class="card-body">
+                    <p>Pembuatan sirup obat merupakan proses formulasi sediaan cair oral yang dilakukan secara sistematis sesuai prinsip <em>Cara Pembuatan Obat yang Baik (CPOB)</em> untuk menghasilkan produk yang aman, efektif, stabil, dan berkualitas. Proses diawali dengan <em>persiapan dan penimbangan</em> seluruh bahan baku, seperti zat aktif, air murni (purified water), pemanis, serta bahan tambahan (eksipien) sesuai formula. Selanjutnya dibuat <em>larutan dasar (simple syrup)</em> dengan melarutkan sukrosa menggunakan metode panas atau tanpa pemanasan, kemudian zat aktif dilarutkan atau didispersikan sesuai sifat kelarutannya. Setelah itu ditambahkan berbagai eksipien, seperti pengawet, buffer, perisa, pewarna, antioksidan, dan pengental untuk meningkatkan stabilitas serta mutu sediaan.</p>
+                    <p>Seluruh bahan kemudian <em>dihomogenisasi</em> hingga tercampur merata, dilanjutkan dengan <em>filtrasi</em> untuk menghilangkan partikel yang tidak diinginkan dan <em>penyesuaian volume</em> menggunakan air murni sesuai formula. Selureh proses produksi dilakukan <em>In Process Control (IPC)</em> dengan memeriksa parameter seperti pH, viskositas, homogenitas, kejernihan, dan volume. Setelah memenuhi spesifikasi, sirup diisi ke dalam botol yang sesuai, ditutup rapat, diberi label, kemudian dikemas dan disimpan pada kondisi yang tepat agar mutu, keamanan, dan efektivitas produk tetap terjaga hingga masa kedaluwarsa.</p>
+                </div>
+            </article>
+
+            <!-- 4. TABEL FORMULA -->
+            <article class="edu-card" id="tabel-formula">
+                <h2 class="card-title"><i class="fa-solid fa-flask text-pink"></i> Pembuatan Sirup Obat Strawberry</h2>
+                <div class="card-body">
+                    
                     <div class="formula-meta-box">
-                        <h4><i class="fa-solid fa-circle-check"></i> Detail Spesifikasi Sediaan:</h4>
+                        <h4><i class="fa-solid fa-circle-check"></i> Karakteristik Formula:</h4>
                         <ul>
-                            <li><strong>Nama Sediaan:</strong> Sirup Rasa Stroberi</li>
-                            <li><strong>Volume per Botol:</strong> 60 mL</li>
-                            <li><strong>Target Terapi:</strong> Analgetik-Antipiretik / Suplemen Anak</li>
+                            <li><strong>Bentuk sediaan:</strong> Sirup oral.</li>
+                            <li><strong>Warna:</strong> Merah muda hingga merah bening.</li>
+                            <li><strong>Rasa:</strong> Manis dengan aroma stroberi.</li>
+                            <li><strong>pH:</strong> 4,5–5,5.</li>
+                            <li><strong>Viskositas:</strong> Sedang, mudah dituang dan diukur menggunakan sendok takar.</li>
+                            <li><strong>Volume akhir:</strong> 100 mL.</li>
                         </ul>
                     </div>
 
-                    <!-- TABEL DATA FORMULA -->
+                    <h4 style="margin: 20px 0 10px 0; color: #ff4d6d;"><i class="fa-solid fa-list-check"></i> Fungsi Masing-Masing Komponen:</h4>
                     <div class="table-container">
                         <table class="data-table">
                             <thead>
                                 <tr>
-                                    <th>Nama Bahan</th>
-                                    <th>Konsentrasi / Jumlah</th>
+                                    <th style="width: 40px; text-align: center;">No</th>
+                                    <th>Komponen / Bahan</th>
                                     <th>Fungsi Utama dalam Formula</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Zat Aktif (cth: Parasetamol)</strong></td>
-                                    <td>120 mg / 5 mL</td>
-                                    <td>Zat terapeutik utama (meredakan demam dan nyeri ringan)</td>
+                                    <td style="text-align: center;">1</td>
+                                    <td><strong>Parasetamol</strong></td>
+                                    <td>Berfungsi sebagai bahan aktif yang memberikan efek antipiretik (penurun demam) dan analgesik (pereda nyeri).</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Sukrosa (Gula Pasir)</strong></td>
-                                    <td>60% - 65%</td>
-                                    <td>Pemanis alami, peningkat viskositas (sirupus simpleks), dan pengawet alami (tekanan osmotik)</td>
+                                    <td style="text-align: center;">2</td>
+                                    <td><strong>Aqua destillata</strong></td>
+                                    <td>Digunakan sebagai pelarut utama karena memiliki tingkat kemurnian tinggi dan memenuhi persyaratan farmasi.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Propilen Glikol</strong></td>
-                                    <td>10% - 15%</td>
-                                    <td>Kosolven (pelarut pembantu untuk meningkatkan kelarutan zat aktif yang sukar larut air)</td>
+                                    <td style="text-align: center;">3</td>
+                                    <td><strong>Sukrosa</strong></td>
+                                    <td>Merupakan pemanis utama yang memperbaiki rasa, meningkatkan viskositas, serta membantu mengurangi aktivitas air sehingga mendukung stabilitas mikrobiologi.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Gliserin</strong></td>
-                                    <td>5% - 10%</td>
-                                    <td>Pemanis tambahan, pengental, dan menjaga kelembaban agar tidak terjadi kristalisasi gula di leher botol (cap-locking)</td>
+                                    <td style="text-align: center;">4</td>
+                                    <td><strong>Sorbitol</strong></td>
+                                    <td>Berfungsi sebagai pemanis tambahan sekaligus humektan yang membantu mempertahankan kelembapan sediaan.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Metil Paraben (Nipagin)</strong></td>
-                                    <td>0.18%</td>
-                                    <td>Pengawet antimikroba fase air (mencegah pertumbuhan jamur dan bakteri selama penyimpanan)</td>
+                                    <td style="text-align: center;">5</td>
+                                    <td><strong>Natrium benzoat</strong></td>
+                                    <td>Digunakan sebagai pengawet untuk mencegah pertumbuhan mikroorganisme selama penyimpanan.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Propil Paraben (Nipasol)</strong></td>
-                                    <td>0.02%</td>
-                                    <td>Pengawet antimikroba pembantu (bekerja sinergis dengan metil paraben untuk memperluas spektrum perlindungan)</td>
+                                    <td style="text-align: center;">6</td>
+                                    <td><strong>CMC-Na</strong></td>
+                                    <td>Berfungsi sebagai pengental (viscosity enhancer) sehingga sirup memiliki kekentalan yang nyaman saat digunakan.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Asam Sitrat & Natrium Sitrat</strong></td>
-                                    <td>q.s. (Secukupnya)</td>
-                                    <td>Sistem dapar (buffer) untuk mempertahankan pH sediaan pada rentang stabil zat aktif (pH 3.8 - 6.1)</td>
+                                    <td style="text-align: center;">7</td>
+                                    <td><strong>Essence stroberi</strong></td>
+                                    <td>Memberikan aroma dan rasa yang lebih disukai, terutama oleh pasien anak.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Perisa Stroberi (Strawberry Flavor)</strong></td>
-                                    <td>0.1% - 0.2%</td>
-                                    <td>Flavouring agent untuk menutupi rasa pahit dari zat aktif obat</td>
+                                    <td style="text-align: center;">8</td>
+                                    <td><strong>Pewarna merah</strong></td>
+                                    <td>Meningkatkan daya tarik visual serta memudahkan identifikasi produk.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Pewarna Merah (FD&C Red No. 40)</strong></td>
-                                    <td>q.s. (Secukupnya)</td>
-                                    <td>Coloring agent untuk memberikan visualisasi warna merah muda/merah segar yang sesuai dengan rasa stroberi</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Air Murni (Purified Water / Aquades)</strong></td>
-                                    <td>Ad 60 mL (Per botol)</td>
-                                    <td>Zat pembawa utama (solven) pelarut keseluruhan komponen material hingga volume akhir</td>
+                                    <td style="text-align: center;">9</td>
+                                    <td><strong>Asam sitrat, Natrium sitrat, & Asam askorbat</strong></td>
+                                    <td>Asam sitrat dan natrium sitrat membentuk sistem buffer untuk menjaga pH tetap stabil, sedangkan asam askorbat berfungsi sebagai antioksidan yang membantu melindungi zat aktif dari oksidasi.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -135,15 +157,52 @@
                 </div>
             </article>
 
-            <!-- ARTIKEL 3: DAFTAR PUSTAKA -->
-            <article class="edu-card bibliography-card" id="pustaka">
-                <h2 class="card-title"><i class="fa-solid fa-book text-rose"></i> 3. Daftar Pustaka / Referensi</h2>
+            <!-- 5. CARA PENGGUNAAN -->
+            <article class="edu-card" id="penggunaan">
+                <h2 class="card-title"><i class="fa-solid fa-hand-holding-medical text-pink"></i> 4. Cara Penggunaan Sirup Obat</h2>
+                <div class="card-body">
+                    <p>Sirup obat merupakan sediaan cair oral yang mudah digunakan, terutama untuk anak-anak, lansia, dan pasien yang sulit menelan tablet atau kapsul. Agar obat bekerja secara optimal, pengguna harus membaca etiket atau brosur kemasan, memperhatikan dosis, aturan pakai, cara penyimpanan, serta memastikan sirup masih dalam kondisi baik tanpa perubahan warna, bau, atau adanya kontaminasi. Jenis sirup juga perlu diperhatikan, karena <em>sirup larutan</em> umumnya tidak perlu dikocok, sedangkan <em>sirup suspensi</em> dan <em>dry syrup</em> harus dikocok terlebih dahulu agar zat aktif tercampur merata.</p>
+                    <p>Dosis sirup sebaiknya diukur menggunakan alat yang disediakan, seperti sendok takar, gelas ukur, atau oral syringe, karena lebih akurat dibandingkan sendok makan atau sendok teh rumah tangga. Untuk <em>dry syrup</em>, air ditambahkan sesuai petunjuk hingga batas volume, kemudian dikocok hingga homogen sebelum digunakan. Setelah direkonstitusi, <em>dry syrup</em> umumnya hanya dapat digunakan selama <em>7–14 hari</em> sesuai petunjuk penyimpanan. Sirup dikonsumsi sesuai dosis dan waktu pemberian yang dianjurkan, disimpan pada suhu yang sesuai, botol selalu ditutup rapat setelah digunakan, serta alat ukur dibersihkan setiap selesai pemakaian. Selain itu, pengguna perlu memperhatikan tanggal kedaluwarsa dan batas waktu penggunaan setelah kemasan dibuka agar mutu, keamanan, dan efektivitas obat tetap terjaga.</p>
+                </div>
+            </article>
+
+            <!-- 6. EVALUASI -->
+            <article class="edu-card" id="evaluasi">
+                <h2 class="card-title"><i class="fa-solid fa-magnifying-glass-chart text-pink"></i> 5. Evaluasi Sirup Obat</h2>
+                <div class="card-body">
+                    <p>Evaluasi sirup obat dilakukan untuk memastikan bahwa sediaan memenuhi standar mutu, aman digunakan, efektif, dan tetap stabil selama penyimpanan. Pengujian diawali dengan <em>evaluasi organoleptik</em>, meliputi warna, bau, rasa, kejernihan, serta adanya partikel atau endapan yang dapat menunjukkan perubahan mutu. Selanjutnya dilakukan <strong>uji homogenitas</strong> untuk memastikan zat aktif dan eksipien terdistribusi merata sehingga setiap dosis mengandung jumlah obat yang seragam. Parameter lain yang penting adalah <em>pH, <strong>viskositas, bbot jenis, dan volume terpindahkan</strong></em>, karena berpengaruh terhadap stabilitas, kenyamanan penggunaan, serta ketepatan dosis.</p>
+                    <p>Selain itu, dilakukan <em>penetapan kadar zat aktif (assay)</em> untuk memastikan kandungan obat sesuai dengan spesifikasi, serta <em>uji cemaran mikrobiologi</em> guna menjamin produk bebas dari mikroorganisme berbahaya. Sirup juga harus menjalani <em>uji stabilitas</em>, baik pada kondisi normal maupun dipercepat, untuk mengevaluasi perubahan fisik, kimia, dan mikrobiologi selama penyimpanan. Terakhir, dilakukan <strong>evaluasi kemasan</strong>, seperti uji kompatibilitas kemasan dan kebocoran tutup botol, agar produk terlindungi dari cahaya, udara, kelembapan, dan kontaminasi. Melalui serangkaian pengujian tersebut, mutu, keamanan, dan efektivitas sirup dapat dipastikan tetap terjaga hingga masa kedaluwarsa.</p>
+                </div>
+            </article>
+
+            <!-- 7. KELEBIHAN -->
+            <article class="edu-card" id="kelebihan">
+                <h2 class="card-title"><i class="fa-solid fa-thumbs-up text-pink"></i> 6. Kelebihan Sirup Obat</h2>
+                <div class="card-body">
+                    <p>Sirup obat memiliki berbagai kelebihan yang menjadikannya salah satu bentuk sediaan cair oral yang banyak digunakan dalam dunia farmasi. Sebagai sediaan cair, sirup lebih mudah ditelan dibandingkan tablet atau kapsul sehingga cocok untuk anak-anak, lansia, dan pasien yang mengalami kesulitan menelan. Selain itu, dosis sirup dapat disesuaikan dengan kebutuhan pasien menggunakan sendok takar, gelas ukur, atau oral syringe, sehingga lebih fleksibel dan akurat, terutama pada pasien pediatri.</p>
+                    <p>Keunggulan lainnya adalah rasa yang lebih manis dan aroma yang menarik berkat penambahan pemanis serta flavor, bahkan didukung teknologi taste masking untuk menyamarkan rasa pahit obat sehingga meningkatkan kepatuhan pasien. Pada sirup larutan, zat aktif telah terlarut sempurna sehingga penyerapannya cenderung lebih cepat dan dosis lebih seragam. Dari sisi formulasi, sirup mudah dikembangkan dengan berbagai variasi, seperti sugar-free syrup, dry syrup, dan sirup herbal, serta dapat ditambahkan eksipien untuk meningkatkan stabilitas dan mutu produk. Proses produksinya juga relatif sederhana dan efisien, mudah diberikan pada pasien dengan kebutuhan khusus, serta tersedia dalam berbagai ukuran, rasa, dan konsentrasi yang dapat disesuaikan dengan kebutuhan masyarakat.</p>
+                </div>
+            </article>
+
+            <!-- 8. KEKURANGAN -->
+            <article class="edu-card" id="kekurangan">
+                <h2 class="card-title"><i class="fa-solid fa-thumbs-down text-pink"></i> 7. Kekurangan Sirup Obat</h2>
+                <div class="card-body">
+                    <p>Meskipun memiliki banyak keunggulan, sirup obat juga memiliki beberapa keterbatasan yang perlu diperhatikan. Karena menggunakan air sebagai pelarut utama, sirup memiliki <em>stabilitas fisik, kimia, dan mikrobiologi</em> yang lebih rendah dibandingkan sediaan padat, sehingga lebih mudah mengalami degradasi dan memerlukan bahan pengawet. Setelah kemasan dibuka, terutama pada <em>dry syrup</em> yang telah direkonstitusi, masa simpan menjadi lebih singkat dan umumnya hanya dapat digunakan selama <em>7–14 hari</em>. Pada sirup suspensi, partikel obat juga dapat mengendap sehingga perlu dikocok sebelum digunakan agar dosis tetap homogen.</p>
+                    <p>Sirup bersifat sensitif terhadap <em>suhu, cahaya, dan kelembapan</em>, sehingga harus disimpan sesuai petunjuk agar mutu tetap terjaga. Pengukuran dosis yang tidak menggunakan alat ukur standar berisiko menyebabkan kesalahan dosis. Selain itu, kandungan gula yang tinggi pada sebagian besar sirup kurang sesuai bagi penderita diabetes dan dapat meningkatkan risiko karies gigi apabila kebersihan mulut tidak dijaga. Dibandingkan tablet atau kapsul, sirup juga memiliki ukuran dan berat yang lebih besar sehingga penyimpanan serta distribusinya kurang praktis. Dari sisi formulasi dan produksi, sirup memerlukan proses yang lebih kompleks serta pengendalian mutu yang ketat untuk memastikan kualitas, keamanan, dan stabilitas produk tetap terjaga.</p>
+                </div>
+            </article>
+
+            <!-- 9. DAFTAR PUSTAKA -->
+            <article class="edu-card bibliography-card" id="daftar-pustaka">
+                <h2 class="card-title"><i class="fa-solid fa-book text-pink"></i> Daftar Pustaka</h2>
                 <div class="card-body">
                     <ul class="bib-list">
-                        <li>Kementerian Kesehatan Republik Indonesia. (2020). <em>Farmakope Indonesia Edisi VI</em>. Jakarta: Direktorat Jenderal Kefarmasian dan Alat Kesehatan.</li>
-                        <li>Rowe, R. C., Sheskey, P. J., & Quinn, M. E. (2009). <em>Handbook of Pharmaceutical Excipients</em> (6th ed.). London: Pharmaceutical Press.</li>
-                        <li>Ansel, H. C. (2014). <em>Ansel's Pharmaceutical Dosage Forms and Drug Delivery Systems</em> (10th ed.). Philadelphia: Lippincott Williams & Wilkins.</li>
-                        <li>Aulton, M. E., & Taylor, K. M. (2017). <em>Aulton's Pharmaceutics: The Design and Manufacture of Medicines</em> (5th ed.). Edinburgh: Elsevier.</li>
+                        <li>Aliza, R., Meilani, I., Amaliasari, V., Agnia, S., Ainni, D. N., Saputro, M., & Pratama, R. (2026). Review Artikel: Perkembangan Evaluasi Stabilitas Sediaan Sirup Berbagai Formula dengan Bahan Aktif yang Berbeda. Jurnal Kesehatan Bakti Tunas Husada, 26(1), 117–127. https://doi.org/10.36465/jkbth.v26i1.1899</li>
+                        <li>Sari, D. A. K., & Pujiastuti, A. (2024). Formulasi dan Evaluasi Mutu Fisik Sirup Sari Buah Jeruk Nipis (Citrus aurantifolia) sebagai Antioksidan Alami. Journal of Holistics and Health Sciences, 6(2), 206–221. https://doi.org/10.35473/jhhs.v6i2.364</li>
+                        <li>Nuzzaibah, H., & Ermawati, N. (2023). Formulasi dan Evaluasi Sediaan Sirup Antipiretik Ekstrak Daun Jeruk Nipis (Citrus aurantifolia L.). Jurnal Medika Nusantara, 1(2), 25–39. https://doi.org/10.59680/medika.v1i2.272</li>
+                        <li>Herdaningsih, S., & Kartikasari, D. (2022). Formulasi Sediaan Sirup Ekstrak Etanol Daun Iler (Coleus atropurpureus (L.) Benth) dan Uji Aktivitas Mukolitik Secara In Vitro. Jurnal Insan Farmasi Indonesia, 5(1), 119–129. https://doi.org/10.36467/jifi.v5i1.925</li>
+                        <li>Budaya. (2025). Formulasi dan Evaluasi Sediaan Farmasi: Tinjauan dari Berbagai Bentuk Sediaan Obat dalam Pengembangan Sediaan Farmasi. Indonesia Natural Research Pharmaceutical Journal.</li>
                     </ul>
                 </div>
             </article>
